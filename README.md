@@ -1,4 +1,4 @@
-# LLMObservability (TinyLlama (CPU-Only) Local Setup)
+# LLMObservability (TinyLlama Local Setup - CPU Only)
 
 This repository documents a minimal, reproducible setup for running the **TinyLlama 1.1B Chat** model locally on a CPU-only machine. The setup uses Python, Hugging Face tooling, and a virtual environment. No GPU or CUDA dependencies are required.
 
