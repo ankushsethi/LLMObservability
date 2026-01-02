@@ -78,7 +78,7 @@ huggingface-cli download TinyLlama/TinyLlama-1.1B-Chat-v1.0 --local-dir tinyllam
 
 The model files will be stored in the tinyllama directory.
 
-### 7. Run the Model
+### 7. Run the Model Locally for Testing
 
 Execute the inference script:
 ```powershell
@@ -86,6 +86,19 @@ python .\llm_env\run.py
 ```
 
 The first run may take additional time due to model loading and initialization.
+
+### 8. Running the FastAPI WebApp to validate Instrumentation
+
+Install Openetelemetry dependencies
+```powershell
+pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp opentelemetry-instrumentation opentelemetry-instrumentation-fastapi  opentelemetry-instrumentation-asgi opentelemetry-instrumentation-requests
+```
+
+### 9. Run Model as an API with single /generate endpoint
+
+```powershell
+uvicorn app:app --host 0.0.0.0 --port 8000
+``` 
 
 Notes: 
 No GPU, CUDA, or vendor-specific acceleration is used.

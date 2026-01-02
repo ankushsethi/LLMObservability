@@ -1,3 +1,6 @@
+# Ignore the lib folder (e.g., for a virtual environment)
+*.exe
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -15,6 +18,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+Lib/
 lib64/
 parts/
 sdist/
